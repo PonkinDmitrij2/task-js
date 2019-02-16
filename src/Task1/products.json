@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Milk",
+    "cost": 120
+  },
+  {
+    "id": 2,
+    "name": "Potato",
+    "cost": 63
+  },
+  {
+    "id": 3,
+    "name": "Chocolate",
+    "cost": 270
+  },
+  {
+    "id": 4,
+    "name": "Coffee",
+    "cost": 167
+  },
+  {
+    "id": 5,
+    "name": "Cheese",
+    "cost": 399
+  },
+  {
+    "id": 6,
+    "name": "Sausage",
+    "cost": 320
+  }
+]
