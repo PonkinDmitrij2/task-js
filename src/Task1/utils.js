@@ -32,6 +32,9 @@ function sortedDescending(products) {
  * @return products sorted in ascending order
  */
 function sortedAscending(products) {
+  return products.slice().sort((a, b) => {
+    return a.cost - b.cost;
+  });
 }
 
 

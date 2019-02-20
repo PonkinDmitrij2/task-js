@@ -25,12 +25,12 @@ test('getById', () => {
     expect(getById(products, -1)).toBeUndefined();
 });
 
-// test('sortedAscending', () => {
-//     const result = sortedAscending(products);
-//     expect(result[0].id).toBe(2);
-//     expect(result[3].id).toBe(3);
-//     expect(result[5].id).toBe(5);
-// });
+test('sortedAscending', () => {
+    const result = sortedAscending(products);
+    expect(result[0].id).toBe(2);
+    expect(result[3].id).toBe(3);
+    expect(result[5].id).toBe(5);
+});
 
 test('sortedDescending', () => {
     const result = sortedDescending(products);
