@@ -39,11 +39,11 @@ test('sortedDescending', () => {
     expect(result[5].id).toBe(2);
 });
 
-// test('renameById', () => {
-//     const newName = 'New product name';
-//     const result = renameById(products, 4, newName);
-//     expect(result[3].name).toBe(newName);
-// });
+test('renameById', () => {
+    const newName = 'New product name';
+    const result = renameById(products, 4, newName);
+    expect(result[3].name).toBe(newName);
+});
 
 // test('deleteById', () => {
 //     const findId = 4;

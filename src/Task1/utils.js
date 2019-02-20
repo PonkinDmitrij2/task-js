@@ -43,6 +43,8 @@ function sortedAscending(products) {
  * @return update products
  */
 function renameById(products, id, newName) {
+  getById(products, id).name = newName;
+  return products;
 }
 
 /**
