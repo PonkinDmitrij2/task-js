@@ -67,6 +67,7 @@ function searchAllParameters(products, search) {
  * @return product with max cost
  */
 function getMaxCost(products) {
+  return sortedDescending(products)[0];
 }
 
 /**

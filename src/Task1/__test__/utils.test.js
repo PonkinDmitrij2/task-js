@@ -10,10 +10,10 @@ const {
 } = require('../utils');
 const products = require('../products');
 
-// test('getMaxCost', () => {
-//     const result = getMaxCost(products);
-//     expect(result.id).toBe(5);
-// });
+test('getMaxCost', () => {
+    const result = getMaxCost(products);
+    expect(result.id).toBe(5);
+});
 
 // test('getMinCost', () => {
 //     const result = getMinCost(products);
