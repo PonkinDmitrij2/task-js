@@ -23,6 +23,9 @@ function getById(products, id) {
  * @return products sorted in descending order
  */
 function sortedDescending(products) {
+  return products.slice().sort((a, b) => {
+    return b.cost - a.cost;
+  });
 }
 
 /**

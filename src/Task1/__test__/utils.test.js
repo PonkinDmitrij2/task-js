@@ -32,12 +32,12 @@ test('getById', () => {
 //     expect(result[5].id).toBe(5);
 // });
 
-// test('sortedDescending', () => {
-//     const result = sortedDescending(products);
-//     expect(result[0].id).toBe(5);
-//     expect(result[3].id).toBe(4);
-//     expect(result[5].id).toBe(2);
-// });
+test('sortedDescending', () => {
+    const result = sortedDescending(products);
+    expect(result[0].id).toBe(5);
+    expect(result[3].id).toBe(4);
+    expect(result[5].id).toBe(2);
+});
 
 // test('renameById', () => {
 //     const newName = 'New product name';
