@@ -45,11 +45,11 @@ test('renameById', () => {
     expect(result[3].name).toBe(newName);
 });
 
-// test('deleteById', () => {
-//     const findId = 4;
-//     const result = deleteById(products, findId);
-//     expect(result.find(product => product.id === findId)).toBeUndefined();
-// });
+test('deleteById', () => {
+    const findId = 4;
+    const result = deleteById(products, findId);
+    expect(result.find(product => product.id === findId)).toBeUndefined();
+});
 
 // test('searchAllParameters', () => {
 //     const result = searchAllParameters(products, 'Milk');

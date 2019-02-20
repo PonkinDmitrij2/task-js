@@ -52,6 +52,8 @@ function renameById(products, id, newName) {
  * @return update products
  */
 function deleteById(products, id) {
+  products.splice(products.indexOf(getById(products, id)), 1);
+  return products;
 }
 
 /**
