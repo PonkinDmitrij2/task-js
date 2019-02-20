@@ -15,10 +15,10 @@ test('getMaxCost', () => {
     expect(result.id).toBe(5);
 });
 
-// test('getMinCost', () => {
-//     const result = getMinCost(products);
-//     expect(result.id).toBe(2);
-// });
+test('getMinCost', () => {
+    const result = getMinCost(products);
+    expect(result.id).toBe(2);
+});
 
 test('getById', () => {
     expect(getById(products, 3).id).toBe(3);
