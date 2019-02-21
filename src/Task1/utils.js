@@ -13,7 +13,9 @@ function getById(products, id) {
   let result;
 
   products.forEach((product) => {
-    if (product.id === id) result = product;
+    if (product.id === id) {
+      result = product;
+    }
   });
 
   return result;
