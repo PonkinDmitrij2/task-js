@@ -63,6 +63,14 @@ function deleteById(products, id) {
  * Find all product which contain the search string in parameters.
  */
 function searchAllParameters(products, search) {
+  return products.filter(product => {
+    for (const key in product) {
+      if (String(product[key]).includes(search)) {
+        return true;
+      }
+    }
+    return false;
+  });
 }
 
 /**

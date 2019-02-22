@@ -51,7 +51,7 @@ test('deleteById', () => {
     expect(result.find(product => product.id === findId)).toBeUndefined();
 });
 
-// test('searchAllParameters', () => {
-//     const result = searchAllParameters(products, 'Milk');
-//     expect(result[0].id).toBe(1);
-// });
+test('searchAllParameters', () => {
+    const result = searchAllParameters(products, 'Milk');
+    expect(result[0].id).toBe(1);
+});
