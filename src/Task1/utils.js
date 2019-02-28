@@ -64,12 +64,7 @@ function deleteById(products, id) {
  */
 function searchAllParameters(products, search) {
   return products.filter(product => {
-    for (const key in product) {
-      if (String(product[key]).includes(search)) {
-        return true;
-      }
-    }
-    return false;
+    return Object.values(product).toString().includes(search);
   });
 }
 
