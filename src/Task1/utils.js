@@ -76,7 +76,13 @@ function getMaxCost(products) {
  * @return product with min cost
  */
 function getMinCost(products) {
-  return sortedAscending(products)[0];
+  return products.reduce((prev, current) => {
+    if (prev.cost > current.cost) {
+      return current;
+    }
+
+    return prev;
+  });
 }
 
 module.exports = {
