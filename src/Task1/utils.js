@@ -37,8 +37,17 @@ function sortedAscending(products) {
  * @return update products
  */
 function renameById(products, id, newName) {
-  getById(products, id).name = newName;
-  return products;
+  return products.map(product => {
+    if (product.id === id) {
+      return {
+        id: product.id,
+        name: newName,
+        cost: product.cost
+      };
+    }
+
+    return product;
+  });
 }
 
 /**
