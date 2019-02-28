@@ -10,15 +10,7 @@ const products = require('./products');
  * @return product with the passed id
  */
 function getById(products, id) {
-  let result;
-
-  products.forEach((product) => {
-    if (product.id === id) {
-      result = product;
-    }
-  });
-
-  return result;
+  return products.find(product => product.id === id);
 }
 
 /**
