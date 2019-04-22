@@ -10,7 +10,9 @@ const recipeBook = {
 };
 
 const cookOrders = (orders) => {
-    //TODO: implement this
+    orders.forEach(order => {
+        order.dishes.forEach(dish => recipeBook[dish]());
+    });
 };
 
 const orders = [
