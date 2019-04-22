@@ -17,7 +17,9 @@ const recipeBook = {
 };
 
 const cookDishes = (dishes) => {
-    //TODO: implement this
+    dishes.forEach((dish) => {
+        recipeBook[dish]();
+    });
 };
 
 const dishes = ['omelet', 'cake', 'steak'];
